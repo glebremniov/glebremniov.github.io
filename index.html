@@ -25,7 +25,7 @@
     <!--<div class="header__img"><img src="images/Gleb%20Remniov.jpg" height="50px" width="50px"></div>-->
     <!--<div class="header__slogan">The only living boy in Minsk</div>-->
     <div class="header__arrow">
-        <i class="fa fa-angle-down" aria-hidden="true" onclick="scrollDown()"></i>
+        <i id="arrow" class="fa fa-angle-down" aria-hidden="true" onclick="scrollDown()"></i>
     </div>
 </header>
 
@@ -60,7 +60,7 @@
             <div class="col__4">
                 <div class="buttons">
                     <a href="mailto:remniov.work@gmail.com?subject=Hey,Od1n!" target="_blank">
-                        <button id="button__email" onclick="YNconfirm(this, event)">email me!</button>
+                        <button id="button__email" onclick="confirmation(this, event,'Open default e-mail app to contact me?')">email me!</button>
                     </a>
                     <br>
                     <a href="pages/page.html">

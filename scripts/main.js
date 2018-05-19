@@ -1,30 +1,25 @@
-
+let isScrolled = false;
 function scrollDown() {
-    // window.scrollTo(0,document.body.scrollHeight);
 
-    // Scroll to specific values
-    // scrollTo is the same
-    // window.scroll({
-    //     top: 2500,
-    //     left: 0,
-    //     behavior: 'smooth'
-    // });
+    let arrow = document.getElementById("arrow");
 
-    // Scroll certain amounts from current position
-    // window.scrollBy({
-    //     top: 200, // could be negative value
-    //     left: 0,
-    //     behavior: 'smooth'
-    // });
-
-    // Scroll to a certain element
-    document.querySelector('footer').scrollIntoView({
-        behavior: 'smooth'
-    });
+    if (!isScrolled){
+        document.querySelector('footer').scrollIntoView({
+            behavior: 'smooth'
+        });
+        isScrolled = true;
+    }
+    else {
+        document.querySelector('header').scrollIntoView({
+            behavior: 'smooth'
+        });
+        isScrolled = false;
+    }
 
 }
-function YNconfirm(el,event){
-    let confirm = window.confirm("Open default e-mail app to contact me?");
+
+function confirmation(el, event, text){
+    let confirm = window.confirm(text);
     if(confirm){
         window.location.href = $(el).attr("href");
     }
