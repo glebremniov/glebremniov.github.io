@@ -35,5 +35,5 @@ function YNconfirm(el,event){
 
 function getValue() {
     let value1 = document.getElementById("button__log_in").value;
-    alert(value1);
+    // alert(value1);
 }
