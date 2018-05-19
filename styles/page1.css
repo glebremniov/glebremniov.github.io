@@ -31,15 +31,18 @@ header h1{
 .projects li{
     border: #232323 solid 1px;
     margin-top: 10px;
-    padding: 10px;
+    /*padding: 10px;*/
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #img_flappy{
     width: 25px;
     height: 25px;
-    padding-left: 10px;
-    position: absolute;
-    left: 230px;
-    top: 167px;
+    padding-right: 10px;
+    /*position: absolute;*/
+    /*left: 230px;*/
+    /*top: 167px;*/
 }
 
