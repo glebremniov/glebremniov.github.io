@@ -1,5 +1,5 @@
 header {
-    /*font-family: "Open Sans", sans-serif;*/
+    font-family: "Open Sans", sans-serif;
     /*text-shadow: 2px 2px 15px black;*/
     background: #232323 url("../images/kale-salad.jpg") repeat;
     height: 100vh;
@@ -11,3 +11,35 @@ header {
     /*justify-content: center;*/
     /*position: relative;*/
 }
+a {
+    text-decoration: none;
+}
+header h1{
+    font-size: 64px;
+    text-align: center;
+    color: #6d84b4;
+    /*text-shadow: 1px 1px 35px #232323;*/
+
+}
+.projects{
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: rgba(159, 206, 255, 0.2);
+    border: #232323 solid 1px;
+    border-radius: 5px;
+}
+.projects li{
+    border: #232323 solid 1px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#img_flappy{
+    width: 25px;
+    height: 25px;
+    padding-left: 10px;
+    position: absolute;
+    left: 230px;
+    top: 167px;
+}
+
