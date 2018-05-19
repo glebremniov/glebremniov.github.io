@@ -17,7 +17,7 @@ a {
 header h1{
     font-size: 64px;
     text-align: center;
-    color: #231934;
+    color: rgba(34, 17, 131, 0.6);
     /*text-shadow: 1px 1px 35px #232323;*/
 
 }
