@@ -1,8 +1,7 @@
 let isScrolled = false;
+let arrow = document.getElementById("arrow").addEventListener("click", scrollDown);
+
 function scrollDown() {
-
-    let arrow = document.getElementById("arrow");
-
     if (!isScrolled){
         document.querySelector('footer').scrollIntoView({
             behavior: 'smooth'
@@ -15,7 +14,6 @@ function scrollDown() {
         });
         isScrolled = false;
     }
-
 }
 
 function confirmation(el, event, text){
@@ -26,9 +24,4 @@ function confirmation(el, event, text){
     else{
         event.preventDefault();
     }
-}
-
-function getValue() {
-    let value1 = document.getElementById("button__log_in").value;
-    // alert(value1);
 }
