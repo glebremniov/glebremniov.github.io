@@ -181,6 +181,7 @@ footer {
 .buttons{
     height: 100%;
     border: transparent solid 1px;
+    //
  }
 #button_email {
     margin-top: 10%;
