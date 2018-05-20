@@ -3,10 +3,10 @@ html {
     font-size: 16px;
     line-height: 1.5;
 }
-a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
+/*a{*/
+    /*text-decoration: none;*/
+    /*!*color: #FFFFFF;*!*/
+/*}*/
 
 /*------------------------------------------------------------------------------------------------
             HEADER
@@ -25,18 +25,18 @@ header {
     justify-content: center;
     position: relative;
 }
-.header__title {
+.header_title {
     font-size: 11vw;
     font-weight: 800;
     margin-bottom: 20px;
     margin-top: -20px;
     color: #CCCCCC;
 }
-.header__title span{
+.header_title span{
     color: #E4C146;
     font-weight: bolder;
 }
-.header__arrow {
+.header_arrow {
     font-size: 50px;
     position: absolute;
     margin-left: -30px;
@@ -46,7 +46,7 @@ header {
     height: 60px;
     transition: 0.1s;
 }
-.header__arrow:hover{
+.header_arrow:hover{
     font-size: 52px;
     color: #E4C146;
 }
@@ -107,27 +107,26 @@ footer {
     /*float: left;*/
     margin-right: 5%;
 }
-.footer__name{
+.footer_name{
     font-family: "Roboto", sans-serif;
     text-align: center;
     /*border: white dotted 1px;*/
     font-size: 24px;
     margin-top: 60px;
 }
-.footer__name span{
+.footer_name span{
     font-weight: bolder;
     color: #E4C146;
 }
-.footer__social{
+.footer_social{
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
     text-align: center;
     text-shadow: 1px 1px 15px #232323;
-    /*border: white dotted 1px;*/
     font-size: 28px;
 }
-.footer__social-icons{
-    background: rgba(35, 35, 35, 0.81);
+.footer_social-icons{
+    background: rgba(35, 35, 35, 0.8);
     margin-top: -5%;
     border: white dashed 1px;
     border-left: none;
@@ -137,42 +136,41 @@ footer {
     font-size: 28px;
     box-shadow: 1px 1px 15px #232323;
 }
-.footer__social-icons a{
-    padding-left: 5px;
-    padding-right: 5px;
+.footer_social-icons a{
+    /*padding-left: 5px;*/
+    /*padding-right: 5px;*/
+    width: 10%;
     display: inline-block;
     color: #FFFFFF;
     text-decoration: none;
-    /*border: #E4C146 solid 1px;*/
+    border: #E4C146 solid 1px;
 }
-.footer__social-icons .fa-vk:hover{
+.footer_social-icons .fa-vk:hover{
     background: rgba(35, 35, 35, 0.9);
     color: #4A76A8;
     transition: 0.2s ease-out;
 }
-.footer__social-icons .fa-twitter:hover{
+.footer_social-icons .fa-twitter:hover{
     background: rgba(35, 35, 35, 0.9);
     color: #1DA1F2;
     transition: 0.2s ease-out;
 }
-.footer__social-icons .fa-instagram:hover{
-    background: rgba(35, 35, 35, 0.9);
-    display: inline-block;
-    color: #E6A2B1;
-    /*background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);*/
+.footer_social-icons .fa-instagram:hover{
+    border-radius: 30px;
+    background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     transition: 0.2s ease-out;
 }
-.footer__social-icons .fa-facebook-official:hover{
+.footer_social-icons .fa-facebook-official:hover{
     background: rgba(35, 35, 35, 0.9);
     color: #6d84b4;
     transition: 0.2s ease-out;
 }
-.footer__social-icons .fa-linkedin-square:hover{
+.footer_social-icons .fa-linkedin-square:hover{
     background: rgba(35, 35, 35, 0.9);
     color: #0077B5;
     transition: 0.2s ease-out;
 }
-.footer__social-icons .fa-github:hover{
+.footer_social-icons .fa-github:hover{
     background: rgba(35, 35, 35, 0.9);
     color: #b547b1;
     transition: 0.2s ease-out;
@@ -185,16 +183,13 @@ footer {
     position: absolute;
     top: 15%;
     left: 20%;
-    /*margin-top: 5%;*/
-    /*margin-left: 20%;*/
-    width:60%;
+    width: 60%;
     height: 30%;
     background-color: transparent;
     color: white;
     font-weight: 600;
     font-size: 20px;
     text-transform: capitalize;
-    /*letter-spacing: 2px;*/
     padding: 10px 25px;
     display: block;
     border: #CCCCCC solid 2px;
@@ -210,9 +205,6 @@ footer {
     position: absolute;
     top: 55%;
     left: 20%;
-    /*margin-top: 10%;*/
-    /*margin-left: 20%;*/
-    /*margin-bottom: 20%;*/
     width:60%;
     height: 30%;
     background-color: transparent;
