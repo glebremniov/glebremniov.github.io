@@ -191,9 +191,9 @@ footer {
     background-color: transparent;
     color: white;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: capitalize;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
     padding: 10px 25px;
     display: block;
     border: #CCCCCC solid 2px;
@@ -217,9 +217,9 @@ footer {
     background-color: transparent;
     color: white;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: capitalize;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
     padding: 10px 25px;
     border: #CCCCCC solid 2px;
     border-radius: 50px;
