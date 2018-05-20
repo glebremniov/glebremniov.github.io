@@ -15,7 +15,7 @@ html {
 header {
     font-family: "Open Sans", sans-serif;
     text-shadow: 2px 2px 15px black;
-    background: #232323 url("../images/ocean.jpg") repeat;
+    background: #232323 url("../images/backgrounds/ocean.jpg") repeat;
     height: 100vh;
     color: #FFF;
     text-align: center;
@@ -60,7 +60,7 @@ footer {
     position: absolute;
     top: 100%;
     left: 0;
-    background:  url("../images/chalkboard.jpg")#232323;
+    background:  url("../images/backgrounds/chalkboard.jpg")#232323;
     color: #FFF;
     width: 100%;
     height: 200px;
@@ -84,7 +84,7 @@ footer {
     margin-right: 5%;
 }
 .column2{
-    background: url("../images/leafs.jpg");
+    background: url("../images/other/leafs.jpg");
     position: absolute;
     top: 0;
     left: 35%;
