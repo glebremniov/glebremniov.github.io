@@ -137,13 +137,10 @@ footer {
     box-shadow: 1px 1px 15px #232323;
 }
 .footer_social-icons a{
-    /*padding-left: 5px;*/
-    /*padding-right: 5px;*/
     width: 10%;
     display: inline-block;
     color: #FFFFFF;
     text-decoration: none;
-    /*border: #E4C146 solid 1px;*/
 }
 .footer_social-icons .fa-vk:hover{
     background: rgba(35, 35, 35, 0.9);
