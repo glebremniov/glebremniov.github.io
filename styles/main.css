@@ -104,20 +104,45 @@ footer {
     top: 20px;
     left: 10%;
     /*right: auto;*/
-    /*border: #CCCCCC solid 1px;*/
+    border: #CCCCCC solid 1px;
     width: 80%;
     height: 80%;
 }
-.columns{
-    /*border: white dashed 1px;*/
+.column1{
+    position: absolute;
+    top: 0;
+    border: white dashed 1px;
     width: 30%;
     height: 100%;
-    float: left;
+    display: inline-block;
+    /*float: left;*/
     margin-right: 5%;
 }
-.columns:last-child{
-    margin-right: -5%;
+.column2{
+    position: absolute;
+    top: 0;
+    left: 35%;
+    border: white dashed 1px;
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    /*float: left;*/
+    margin-right: 5%;
 }
+.column3{
+    position: absolute;
+    top: 0;
+    left: 70%;
+    border: white dashed 1px;
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    /*float: left;*/
+    margin-right: 5%;
+}
+/*.columns:last-child{*/
+    /*margin-right: -5%;*/
+/*}*/
 .footer__name{
     font-family: "Roboto", sans-serif;
     text-align: center;
