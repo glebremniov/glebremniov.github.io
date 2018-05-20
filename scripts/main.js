@@ -1,5 +1,5 @@
 let isScrolled = false;
-let arrow = document.getElementById("arrow").addEventListener("click", scrollDown);
+document.getElementById("arrow").addEventListener("click", scrollDown);
 
 function scrollDown() {
     if (!isScrolled){
