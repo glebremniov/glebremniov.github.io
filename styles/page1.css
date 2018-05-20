@@ -9,11 +9,8 @@ a {
 header h1{
     font-size: 64px;
     text-align: center;
-    text-shadow: 1px 1px 15px rgba(255, 255, 255, 0.51);
+    /*text-shadow: 1px 1px 15px rgba(255, 255, 255, 0.51);*/
     color: rgba(0, 0, 0, 0.6);
-
-    /*text-shadow: 1px 1px 35px #232323;*/
-
 }
 .projects{
     height: 75%;
