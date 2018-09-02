@@ -1,5 +1,5 @@
 let isScrolled = false;
-document.getElementById("arrow").addEventListener("click", scrollDown);
+document.getElementById('arrow').addEventListener('click', scrollDown);
 
 function scrollDown() {
     if (!isScrolled){
@@ -16,10 +16,11 @@ function scrollDown() {
     }
 }
 
-function confirmation(el, event, text){
+function confirmation(el, event){
+    let text = 'Open default e-mail app to contact me?';
     let confirm = window.confirm(text);
     if(confirm){
-        window.location.href = $(el).attr("href");
+        window.location.href = $(el).attr('href');
     }
     else{
         event.preventDefault();
