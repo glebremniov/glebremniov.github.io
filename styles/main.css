@@ -1,188 +1,262 @@
-html {
+html
+{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
 /*a{*/
-    /*text-decoration: none;*/
-    /*!*color: #FFFFFF;*!*/
+/*text-decoration: none;*/
+/*!*color: #FFFFFF;*!*/
 /*}*/
 
 /*------------------------------------------------------------------------------------------------
             HEADER
 ------------------------------------------------------------------------------------------------*/
 
-header {
-    font-family: "Open Sans", sans-serif;
-    text-shadow: 2px 2px 15px black;
-    background: #232323 url("../images/backgrounds/ocean.jpg") repeat;
-    height: 100vh;
-    color: #FFF;
-    text-align: center;
+header
+{
+    font-family: 'Open Sans', sans-serif;
+
+    position: relative;
+
     display: flex;
     flex-direction: column;
+
+    height: 100vh;
+
+    text-align: center;
+
+    color: #fff;
+    background: #232323 url('../images/backgrounds/ocean.jpg') repeat;
+    text-shadow: 2px 2px 15px black;
+
     align-items: center;
     justify-content: center;
-    position: relative;
 }
-.header_title {
+.header_title
+{
     font-size: 11vw;
     font-weight: 800;
-    margin-bottom: 20px;
+
     margin-top: -20px;
-    color: #CCCCCC;
+    margin-bottom: 20px;
+
+    color: #ccc;
 }
-.header_title span{
-    color: #E4C146;
+.header_title span
+{
     font-weight: bolder;
+
+    color: #e4c146;
 }
-.header_arrow {
+.header_arrow
+{
     font-size: 50px;
+
     position: absolute;
-    margin-left: -30px;
     bottom: 50px;
     left: 50%;
+
     width: 60px;
     height: 60px;
-    transition: 0.1s;
+    margin-left: -30px;
+
+    transition: .1s;
 }
-.header_arrow:hover{
+.header_arrow:hover
+{
     font-size: 52px;
-    color: #E4C146;
+
+    color: #e4c146;
 }
 
 /*------------------------------------------------------------------------------------------------
             Footer
 ------------------------------------------------------------------------------------------------*/
 
-footer {
-    border-top: rgba(255, 255, 255, 0.51) dashed 2px;
+footer
+{
     position: absolute;
     top: 100%;
     left: 0;
-    background:  url("../images/backgrounds/chalkboard.jpg")#232323;
-    color: #FFF;
+
     width: 100%;
     height: 200px;
+
+    color: #fff;
+    border-top: rgba(255, 255, 255, .51) dashed 2px;
+    background: url('../images/backgrounds/chalkboard.jpg')#232323;
 }
-.container{
+.container
+{
     position: relative;
     top: 20px;
     left: 10%;
+
     width: 80%;
     height: 80%;
 }
-.column1{
+.column1
+{
     /*background: url("../images/landscape.jpg");*/
     position: absolute;
     top: 0;
-    border: rgba(255, 255, 255, 0.5) dashed 1px;
-    border-radius: 5px;
+
+    display: inline-block;
+
     width: 30%;
     height: 100%;
-    display: inline-block;
     margin-right: 5%;
+
+    border: rgba(255, 255, 255, .5) dashed 1px;
+    border-radius: 5px;
 }
-.column2{
-    background: url("../images/other/leafs.jpg");
+.column2
+{
     position: absolute;
     top: 0;
     left: 35%;
-    border: rgba(255, 255, 255, 0.51) dashed 1px;
-    border-radius: 5px;
+
+    display: inline-block;
+
     width: 30%;
     height: 100%;
-    display: inline-block;
     margin-right: 5%;
+
+    border: rgba(255, 255, 255, .51) dashed 1px;
+    border-radius: 5px;
+    background: url('../images/other/leafs.jpg');
 }
-.column3{
+.column3
+{
     position: absolute;
     top: 0;
     left: 70%;
-   border: rgba(255, 255, 255, 0.51) dashed 1px;
-    border-radius: 5px;
+
+    display: inline-block;
+
     width: 30%;
     height: 100%;
-    display: inline-block;
     /*float: left;*/
     margin-right: 5%;
+
+    border: rgba(255, 255, 255, .51) dashed 1px;
+    border-radius: 5px;
 }
-.footer_name{
-    font-family: "Roboto", sans-serif;
-    text-align: center;
+.footer_name
+{
+    font-family: 'Roboto', sans-serif;
     /*border: white dotted 1px;*/
     font-size: 24px;
+
     margin-top: 60px;
+
+    text-align: center;
 }
-.footer_name span{
+.footer_name span
+{
     font-weight: bolder;
-    color: #E4C146;
+
+    color: #e4c146;
 }
-.footer_social{
+.footer_social
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
     font-weight: bold;
-    font-family: "Open Sans", sans-serif;
+
     text-align: center;
+
     text-shadow: 1px 1px 15px #232323;
-    font-size: 28px;
 }
-.footer_social-icons{
-    background: rgba(35, 35, 35, 0.8);
-    margin-top: -5%;
-    border: white dashed 1px;
-    border-left: none;
-    border-right: none;
-    text-align: center;
-    color: #FFFFFF;
+.footer_social-icons
+{
     font-size: 28px;
+
+    margin-top: -5%;
+
+    text-align: center;
+
+    color: #fff;
+    border: white dashed 1px;
+    border-right: none;
+    border-left: none;
+    background: rgba(35, 35, 35, .8);
     box-shadow: 1px 1px 15px #232323;
 }
-.footer_social-icons a{
-    width: 10%;
+.footer_social-icons a
+{
     display: inline-block;
-    color: #FFFFFF;
+
+    width: 10%;
+
     text-decoration: none;
+
+    color: #fff;
 }
-.footer_social-icons .fa-vk:hover{
-    background: rgba(35, 35, 35, 0.9);
-    color: #4A76A8;
-    transition: 0.2s ease-out;
+.footer_social-icons .fa-vk:hover
+{
+    transition: .2s ease-out;
+
+    color: #4a76a8;
+    background: rgba(35, 35, 35, .9);
 }
-.footer_social-icons .fa-twitter:hover{
-    background: rgba(35, 35, 35, 0.9);
-    color: #1DA1F2;
-    transition: 0.2s ease-out;
+.footer_social-icons .fa-twitter:hover
+{
+    transition: .2s ease-out;
+
+    color: #1da1f2;
+    background: rgba(35, 35, 35, .9);
 }
-.footer_social-icons .fa-instagram:hover{
+.footer_social-icons .fa-instagram:hover
+{
+    transition: .2s ease-out;
+
     border-radius: 30px;
-    background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    transition: 0.2s ease-out;
+    background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
-.footer_social-icons .fa-facebook-official:hover{
-    background: rgba(35, 35, 35, 0.9);
+.footer_social-icons .fa-facebook-official:hover
+{
+    transition: .2s ease-out;
+
     color: #6d84b4;
-    transition: 0.2s ease-out;
+    background: rgba(35, 35, 35, .9);
 }
-.footer_social-icons .fa-linkedin-square:hover{
-    background: rgba(35, 35, 35, 0.9);
-    color: #0077B5;
-    transition: 0.2s ease-out;
+.footer_social-icons .fa-linkedin-square:hover
+{
+    transition: .2s ease-out;
+
+    color: #0077b5;
+    background: rgba(35, 35, 35, .9);
 }
-.footer_social-icons .fa-github:hover{
-    background: rgba(35, 35, 35, 0.9);
+.footer_social-icons .fa-github:hover
+{
+    transition: .2s ease-out;
+
     color: #b547b1;
-    transition: 0.2s ease-out;
+    background: rgba(35, 35, 35, .9);
 }
-.buttons{
+.buttons
+{
+    font-family: Roboto;
+    line-height: normal;
+
     height: 100%;
-    border: transparent solid 1px;
- }
-#button_email {
+
+    text-align: center;
+}
+#button_email
+{
+    font-size: 20px;
+    font-weight: 500;
+
     position: absolute;
     top: 15%;
     left: 20%;
+
     width: 60%;
     height: 30%;
-    background-color: transparent;
+    /*background-color: transparent;
     color: white;
     font-weight: 600;
     font-size: 20px;
@@ -191,32 +265,47 @@ footer {
     display: block;
     border: #CCCCCC solid 2px;
     border-radius: 50px;
-    box-shadow: 2px 2px 5px black;
-    transition: 0.2s ease-out;
+    box-shadow: 2px 2px 5px black;*/
+
+    transition: .2s ease-out;
+
+    color: #f2f2f2;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(102.26deg, #2d9cdb 0%, #9279da 51.38%, #bb6bd9 100%);
 }
-#button_email:hover {
-    border-color: #E4C146;
-    background-color: rgba(255, 220, 80, 0.40);
-}
-#button_login {
+
+#button_projects
+{
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: 600;
+
     position: absolute;
     top: 55%;
     left: 20%;
-    width:60%;
+
+    width: 60%;
     height: 30%;
-    background-color: transparent;
-    color: white;
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: capitalize;
     /*letter-spacing: 2px;*/
     padding: 10px 25px;
-    border: #CCCCCC solid 2px;
+
+    transition: .2s ease-out;
+    text-transform: capitalize;
+
+    color: #f2f2f2;
+    border: none;
+    border-radius: 25px;
+    /*
+    color: white;
+    border: #ccc solid 2px;
     border-radius: 50px;
-    box-shadow: 2px 2px 5px black;
-    transition: 0.2s ease-out;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px black;*/
+    background: linear-gradient(270deg, #ffce3a 0%, #fac844 26.52%, #bb6bd9 99.99%);
 }
-#button_login:hover {
+#button_projects:hover
+{
     border-color: #aa0097;
-    background-color: rgba(255, 0, 223, 0.33);
+    background-color: rgba(255, 0, 223, .33);
 }

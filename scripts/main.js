@@ -1,28 +1,32 @@
-let isScrolled = false;
-document.getElementById('arrow').addEventListener('click', scrollDown);
+$(function() {
+    $('#arrow').click(scrollDown); 
+    $('#button_email').click(function() {
+        let text = 'Open default e-mail app to contact me?';
+        let confirm = window.confirm(text);
+        if (confirm) {
+            openWindow('mailto:remniov.work@gmail.com?subject=Hey,Od1n!', '_blank');
+        }
+    });
+    $('#button_projects').click(function() {
+        openWindow('pages/page1.html', '_blank');
+    });
 
-function scrollDown() {
-    if (!isScrolled){
-        document.querySelector('footer').scrollIntoView({
-            behavior: 'smooth'
-        });
-        isScrolled = true;
+    let isScrolled = false;
+    function scrollDown() {
+        if (!isScrolled) {
+            document.querySelector('footer').scrollIntoView({
+                behavior: 'smooth'
+            });
+            isScrolled = true;
+        } else {
+            document.querySelector('header').scrollIntoView({
+                behavior: 'smooth'
+            });
+            isScrolled = false;
+        }
     }
-    else {
-        document.querySelector('header').scrollIntoView({
-            behavior: 'smooth'
-        });
-        isScrolled = false;
-    }
-}
+});
 
-function confirmation(el, event){
-    let text = 'Open default e-mail app to contact me?';
-    let confirm = window.confirm(text);
-    if(confirm){
-        window.location.href = $(el).attr('href');
-    }
-    else{
-        event.preventDefault();
-    }
+function openWindow(src, target) {
+    window.open(src, target);
 }
