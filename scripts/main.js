@@ -1,5 +1,5 @@
 $(function() {
-    $('#arrow').click(scrollDown); 
+    $('#arrow').click(scrollDown);
     $('#button_email').click(function() {
         let text = 'Open default e-mail app to contact me?';
         let confirm = window.confirm(text);
@@ -12,6 +12,7 @@ $(function() {
     });
 
     let isScrolled = false;
+
     function scrollDown() {
         if (!isScrolled) {
             document.querySelector('footer').scrollIntoView({
