@@ -18,6 +18,7 @@ $(function() {
             document.querySelector('footer').scrollIntoView({
                 behavior: 'smooth'
             });
+            
             isScrolled = true;
         } else {
             document.querySelector('header').scrollIntoView({
