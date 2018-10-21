@@ -15,15 +15,10 @@ $(function() {
 
     function scrollDown() {
         if (!isScrolled) {
-            document.querySelector('footer').scrollIntoView({
-                behavior: 'smooth'
-            });
-            
+            window.scroll({ top: 10000, left: 0, behavior: 'smooth' });
             isScrolled = true;
         } else {
-            document.querySelector('header').scrollIntoView({
-                behavior: 'smooth'
-            });
+            window.scroll({ top: 0, left: 0, behavior: 'smooth' });
             isScrolled = false;
         }
     }

@@ -29,6 +29,7 @@ header {
     font-weight: 500;
     font-size: 171px;
     font-weight: 900;
+    cursor: default;
 }
 
 .header_title span {
@@ -37,6 +38,7 @@ header {
 }
 
 .header_arrow {
+    cursor: pointer;
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -81,6 +83,7 @@ footer {
 }
 
 #column-1 {
+    cursor: default;
     position: absolute;
     top: 0;
     display: inline-block;
@@ -122,13 +125,21 @@ footer {
 } */
 
 .footer_social-icons {
-    font-size: 28px;
-    margin-top: -5%;
-    text-align: center;
-    color: #fff;
+    position: absolute;
+    top: 33%;
+    left: 7%;
+    display: inline;
+    border: 3px solid #333333;
+    border-radius: 5px;
+    padding: 10px 10px;
 }
 
-.footer_social-icons a {
+.icons {
+    margin: 0 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4), 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+/* .footer_social-icons a {
     display: inline-block;
     width: 10%;
     text-decoration: none;
@@ -169,11 +180,10 @@ footer {
     transition: .2s ease-out;
     color: #b547b1;
     background: rgba(35, 35, 35, .9);
-}
+} */
 
 .buttons {
     font-size: 20px;
-    /* height: 50px; */
     width: 70%;
     padding: 10px 25px;
     transition: .35s ease-out;
@@ -182,25 +192,25 @@ footer {
     background: #4F4F4F;
 }
 
-#button_email {
-    position: absolute;
-    top: 60%;
-    left: 15%;
-    color: #292929;
-    font-weight: 600;
-    /* background: linear-gradient(102.26deg, #2d9cdb 0%, #9279da 51.38%, #bb6bd9 100%); */
-}
-
 #button_projects {
-
+    cursor: pointer;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 15%;
     font-weight: 500;
-
     color: #292929;
     border: 3px solid #333333;
     border-radius: 5px;
+}
+
+#button_email {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    color: #292929;
+    font-weight: 600;
+    /* background: linear-gradient(102.26deg, #2d9cdb 0%, #9279da 51.38%, #bb6bd9 100%);  */
 }
 
 /* #button_email:hover {
