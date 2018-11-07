@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Gleb Remiov's web-page</title>
@@ -8,34 +9,58 @@
     <!--Собственный стиль-->
     <link rel="stylesheet" href="styles/main.css">
     <!--Подключение веб-шрифтов-->
-    <link href="https://fonts.googleapis.com/css?Open+Sans:300,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Подключение иконки-->
     <link rel="icon" href="images/favicons/favicon-main.png">
 </head>
+
 <body>
     <!--************************** HEADER *********************************-->
-<header>
-    <div class="header_title"><span>ODIN</span>ROSSY</div>
-    <div class="header_arrow">
-        <i id="arrow" class="fa fa-angle-down" aria-hidden="true"></i>
-    </div>
-</header>
-    <!--************************** FOOTER *********************************-->
-<footer>
-    <div class="container">
-        <div class="column1">
-            <p class="footer_name">© <span>Gleb Remniov</span> 2018</p>
+    <header>
+        <div class="header_title"><span>ODIN</span>ROSSY</div>
+        <div class="header_arrow">
+            <img src="images/icons/arrow.svg" id="arrow">
+            <!-- <i id="arrow" class="fa fa-angle-down" aria-hidden="true"></i> -->
         </div>
-        <div class="column2">
-            <p class="footer_social">My links :)</p>
-            <div class="footer_social-icons">
-                <a href="https://vk.com/od1nrossy" target="_blank">
+    </header>
+
+    <!--************************** FOOTER *********************************-->
+    <footer>
+        <div class="container">
+            <div class="column" id="column-1">
+                <div class="grid-container">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">
+                        <p class="footer_name">© <span>Gleb Remniov</span> 2018</p>
+                    </div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
+            </div>
+            <div class="column" id="column-2">
+                <div class="footer_social-icons">
+                    <a href="https://vk.com/odinrossy" target="_blank">
+                        <img class="icons" src="images/icons/vk.svg" alt="vk"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100007141125761" target="_blank">
+                        <img class="icons" src="images/icons/facebook.svg" alt="facabook"></a>
+                    <a href="https://www.instagram.com/glebremniov/" target="_blank">
+                        <img class="icons" src="images/icons/instagram.svg" alt="instagram"></a>
+                    <a href="https://github.com/OdinRossy" target="_blank">
+                        <img class="icons" src="images/icons/github.svg" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/gleb-remniov-028687159/" target="_blank">
+                        <img class="icons" src="images/icons/linkedin.svg" alt="linkedin"></a>
+                    <!-- <a href="https://vk.com/od1nrossy" target="_blank">
                     <i class="fa fa-vk" aria-hidden="true"></i>
                 </a>
-                <a href="https://twitter.com/glebremniov" target="_blank">
+                 <a href="https://twitter.com/glebremniov" target="_blank">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
+                </a> 
                 <a href="https://www.instagram.com/glebremniov/" target="_blank">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
@@ -47,18 +72,17 @@
                 </a>
                 <a href="https://github.com/OdinRossy" target="_blank">
                     <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
+                </a> -->
+                </div>
+            </div>
+            <div class="column" id="column-3">
+                <button id="button_projects" class="buttons">My works</button>
+                <button id="button_email" class="buttons">Cooperate</button>
             </div>
         </div>
-        <div class="column3">
-            <div >
-                    <button id="button_email" class="buttons">Cooperate</button>
-                    <button id="button_projects" class="buttons">Projects</button>  
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
