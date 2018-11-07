@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'social-font';
+    src: url('fonts/social-font.eot?wdkznd');
+    src: url('fonts/social-font.eot?wdkznd#iefix') format('embedded-opentype'),
+        url('fonts/social-font.ttf?wdkznd') format('truetype'),
+        url('fonts/social-font.woff?wdkznd') format('woff'),
+        url('fonts/social-font.svg?wdkznd#social-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html body {
+    font-family: 'Roboto', sans-serif;
+    background-color: fafafa;
+}
+
+/*------------------------------------------------------------------------------------------------
+            HEADER
+------------------------------------------------------------------------------------------------*/
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+}
+
+.header_title {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(50deg, #FF8D27 7%, #8A2DE1 100%);
+    /* Запрещаем рисовать градиент Опере, понимающей префикс -webkit- */
+    background-image: -webkit-linear-gradient(50deg, #FF8D27 7%, #8A2DE1 100%);
+    
+    font-size: 11vw;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 171px;
+    font-weight: 900;
+    cursor: default;
+}
+
+.header_title span {
+    font-weight: 500;
+    color: #4F4F4F;
+}
+
+.header_arrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    transition-duration: 300ms;
+}
+
+.header_arrow:hover {
+    opacity: 0.5;
+}
+
+/*------------------------------------------------------------------------------------------------
+            Footer
+------------------------------------------------------------------------------------------------*/
+footer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    background: #333333;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.container {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.column {
+    background: #4F4F4F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-right: 5%;
+
+}
+
+#column-1 {
+    cursor: default;
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+
+#column-2 {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+
+#column-3 {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+
+.footer_name {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #292929;
+}
+
+.footer_social-icons {
+    cursor: default;
+    position: absolute;
+    top: 33%;
+    left: 7%;
+    display: inline;
+    border: 3px solid #333333;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+/*------------------------------------------------------------------------------------------------
+            Icons
+------------------------------------------------------------------------------------------------*/
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'social-font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    font-size: 32px;
+    margin: 0 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    transition-duration: 300ms;
+    cursor: pointer;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon-vk:before {
+    content: "\e900";
+    color: #828282;
+}
+
+.icon-linkedin:before {
+    content: "\e901";
+    color: #828282;
+}
+
+.icon-instagram:before {
+    content: "\e902";
+    color: #828282;
+}
+
+.icon-github:before {
+    content: "\e903";
+    color: #828282;
+}
+
+.icon-facebook:before {
+    content: "\e904";
+    color: #828282;
+}
+
+.icon-down-arrow:before {
+    content: "\e905";
+    color: #fff;
+}
+
+.icon-arrow:before {
+    content: "\e906";
+}
+
+/*------------------------------------------------------------------------------------------------
+            Buttons
+------------------------------------------------------------------------------------------------*/
+.buttons {
+    font-size: 20px;
+    width: 70%;
+    padding: 10px 25px;
+    transition: .35s ease-out;
+    text-align: center;
+    border: none;
+    background: #4F4F4F;
+}
+
+#button_projects {
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-weight: 500;
+    color: #292929;
+    border: 3px solid #333333;
+    border-radius: 5px;
+}
+
+#button_email {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    color: #292929;
+    font-weight: 600;
+    /* background: linear-gradient(102.26deg, #2d9cdb 0%, #9279da 51.38%, #bb6bd9 100%);  */
+}
+
+/*------------------------------------------------------------------------------------------------
+            Grid
+------------------------------------------------------------------------------------------------*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    padding: 25px 10px;
+    text-align: center;
+}
