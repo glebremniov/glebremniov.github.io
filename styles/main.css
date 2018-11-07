@@ -1,6 +1,8 @@
-html {
+html body {
     font-family: 'Roboto', sans-serif;
+    background-color: fafafa;
 }
+
 
 /*------------------------------------------------------------------------------------------------
             HEADER
@@ -20,9 +22,9 @@ header {
 .header_title {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(45deg, #FF8D27 0%, #8A2DE1 100%);
+    background-image: -webkit-linear-gradient(50deg, #FF8D27 7%, #8A2DE1 100%);
     /* Запрещаем рисовать градиент Опере, понимающей префикс -webkit- */
-    background-image: -webkit-linear-gradient(45deg, #FF8D27 0%, #8A2DE1 100%);
+    background-image: -webkit-linear-gradient(50deg, #FF8D27 7%, #8A2DE1 100%);
     font-size: 11vw;
     margin-top: -20px;
     margin-bottom: 20px;
@@ -49,7 +51,7 @@ header {
 }
 
 .header_arrow:hover {
-    bottom: 49px;
+
 }
 
 /*------------------------------------------------------------------------------------------------
@@ -89,7 +91,6 @@ footer {
     display: inline-block;
     width: 30%;
     height: 100%;
-
 }
 
 #column-2 {
@@ -135,7 +136,6 @@ footer {
 }
 
 .icons {
-    cursor: pointer;
     margin: 0 10px;
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4), 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
