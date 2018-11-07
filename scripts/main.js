@@ -4,11 +4,11 @@ $(function() {
         const text = 'Do you want contact me?';
         let confirm = window.confirm(text);
         if (confirm) {
-            openWindow('mailto:remniov.work@gmail.com?subject=odinrossy.github.io', '_blank');
+            window.open('mailto:remniov.work@gmail.com?subject=odinrossy.github.io', '_blank');
         }
     });
     $('#button_projects').click(function() {
-        openWindow('pages/page1.html', '_blank');
+        window.open('https://goo.gl/8ADu2B', '_blank');
     });
 
     let isScrolled = false;
