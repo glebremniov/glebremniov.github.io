@@ -1,13 +1,22 @@
+@font-face {
+    font-family: 'social-font';
+    src: url('fonts/social-font.eot?wdkznd');
+    src: url('fonts/social-font.eot?wdkznd#iefix') format('embedded-opentype'),
+        url('fonts/social-font.ttf?wdkznd') format('truetype'),
+        url('fonts/social-font.woff?wdkznd') format('woff'),
+        url('fonts/social-font.svg?wdkznd#social-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html body {
     font-family: 'Roboto', sans-serif;
     background-color: fafafa;
 }
 
-
 /*------------------------------------------------------------------------------------------------
             HEADER
 ------------------------------------------------------------------------------------------------*/
-
 header {
     position: relative;
     display: flex;
@@ -47,17 +56,16 @@ header {
     width: 60px;
     height: 60px;
     margin-left: -30px;
-    transition: .01s;
+    transition-duration: 300ms;
 }
 
 .header_arrow:hover {
-
+    opacity: 0.5;
 }
 
 /*------------------------------------------------------------------------------------------------
             Footer
 ------------------------------------------------------------------------------------------------*/
-
 footer {
     position: absolute;
     top: 100%;
@@ -121,11 +129,8 @@ footer {
     color: #292929;
 }
 
-/* .footer_name span {
-
-} */
-
 .footer_social-icons {
+    cursor: default;
     position: absolute;
     top: 33%;
     left: 7%;
@@ -135,54 +140,71 @@ footer {
     padding: 10px 10px;
 }
 
-.icons {
+/*------------------------------------------------------------------------------------------------
+            Icons
+------------------------------------------------------------------------------------------------*/
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'social-font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    /* font-variant: normal; */
+    /* text-transform: none; */
+    line-height: 1;
+
+    font-size: 32px;
     margin: 0 10px;
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4), 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    transition-duration: 300ms;
+    cursor: pointer;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* .footer_social-icons a {
-    display: inline-block;
-    width: 10%;
-    text-decoration: none;
+.icon:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon-vk:before {
+    content: "\e900";
+    color: #828282;
+}
+
+.icon-linkedin:before {
+    content: "\e901";
+    color: #828282;
+}
+
+.icon-instagram:before {
+    content: "\e902";
+    color: #828282;
+}
+
+.icon-github:before {
+    content: "\e903";
+    color: #828282;
+}
+
+.icon-facebook:before {
+    content: "\e904";
+    color: #828282;
+}
+
+.icon-down-arrow:before {
+    content: "\e905";
     color: #fff;
 }
 
-.footer_social-icons .fa-vk:hover {
-    transition: .2s ease-out;
-    color: #4a76a8;
-    background: rgba(35, 35, 35, .9);
+.icon-arrow:before {
+    content: "\e906";
 }
 
-.footer_social-icons .fa-twitter:hover {
-    transition: .2s ease-out;
-    color: #1da1f2;
-    background: rgba(35, 35, 35, .9);
-}
-
-.footer_social-icons .fa-instagram:hover {
-    transition: .2s ease-out;
-    border-radius: 30px;
-    background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-}
-
-.footer_social-icons .fa-facebook-official:hover {
-    transition: .2s ease-out;
-    color: #6d84b4;
-    background: rgba(35, 35, 35, .9);
-}
-
-.footer_social-icons .fa-linkedin-square:hover {
-    transition: .2s ease-out;
-    color: #0077b5;
-    background: rgba(35, 35, 35, .9);
-}
-
-.footer_social-icons .fa-github:hover {
-    transition: .2s ease-out;
-    color: #b547b1;
-    background: rgba(35, 35, 35, .9);
-} */
-
+/*------------------------------------------------------------------------------------------------
+            Buttons
+------------------------------------------------------------------------------------------------*/
 .buttons {
     font-size: 20px;
     width: 70%;
@@ -214,14 +236,9 @@ footer {
     /* background: linear-gradient(102.26deg, #2d9cdb 0%, #9279da 51.38%, #bb6bd9 100%);  */
 }
 
-/* #button_email:hover {
-    box-shadow: 0 5px 35px rgba(51, 51, 51, .75);
-} */
-
-/* #button_projects:hover {
-
-} */
-
+/*------------------------------------------------------------------------------------------------
+            Grid
+------------------------------------------------------------------------------------------------*/
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
