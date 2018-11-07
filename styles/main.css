@@ -34,6 +34,7 @@ header {
     background-image: -webkit-linear-gradient(50deg, #FF8D27 7%, #8A2DE1 100%);
     /* Запрещаем рисовать градиент Опере, понимающей префикс -webkit- */
     background-image: -webkit-linear-gradient(50deg, #FF8D27 7%, #8A2DE1 100%);
+    
     font-size: 11vw;
     margin-top: -20px;
     margin-bottom: 20px;
@@ -120,7 +121,6 @@ footer {
 }
 
 .footer_name {
-
     font-weight: 500;
     line-height: normal;
     font-size: 24px;
