@@ -80,8 +80,8 @@ footer {
 .container {
     position: relative;
     top: 10%;
-    left: 5%;
-    width: 90%;
+    left: 10%;
+    width: 80%;
     height: 80%;
 }
 
@@ -143,7 +143,7 @@ footer {
 .footer_social-icons {
     position: absolute;
     top: 33%;
-    left: 10%;
+    left: 5%;
     display: inline;
     border: 3px solid #333333;
     border-radius: 5px;
