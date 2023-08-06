@@ -2,7 +2,7 @@
 
 ### A short bio
 
-My name is **Gleb Remniov** (or **Hleb Ramniou** in belarusian manner).
+My name is **Gleb Remniov** (or **Hleb Ramniou** in the belarusian manner).
 
 I was born and raised in Minsk the capital of Belarus, but currently living ~~la vida loca~~ in Vilnus, Lithuania.
 
