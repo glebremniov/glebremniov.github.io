@@ -13,6 +13,6 @@ I'm a Java software engineer with more than 4 years commercial experience. Worki
 - ⌨️ At the same time, I'm really enthusiatstic at coding small frontend apps for my personal needs
 - 🍎 I like MacOS and Apple products/ecosystem
 - 📫 How to reach me:
-  - E-Mail: [g.remniov@gmail.com](mailto:g.remniov@gmail.com) or [remniov.work@gmail.com](mailto:remniov.work@gmail.com)
-  - [Linkedin](https://www.linkedin.com/in/glebremniov/)
-  - [Instagram](https://www.instagram.com/glebremniov/)
+  - E-Mail: [g.remniov@gmail.com](mailto:g.remniov@gmail.com)
+  - Linkedin: [@glebremniov](https://www.linkedin.com/in/glebremniov/)
+  - Instagram: [@glebremniov](https://www.instagram.com/glebremniov/)
